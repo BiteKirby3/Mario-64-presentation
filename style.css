@@ -1,0 +1,998 @@
+/* GLOBAL */
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('Aaargh-webfont.eot');
+    src: url('Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aaargh-webfont.woff2') format('woff2'),
+         url('Aaargh-webfont.woff') format('woff'),
+         url('Aaargh-webfont.ttf') format('truetype'),
+         url('Aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body 
+{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.clear 
+{
+    margin: 50px 0;
+}
+.wrap 
+{
+    width: 100%;
+    margin: 50px auto 0 auto;
+    box-sizing: border-box;
+}
+li 
+{
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#contenu 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 900px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1,h2 
+{
+    text-transform: uppercase;
+    font-family: 'aaarghnormal', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    margin: 0;
+    display: flex;
+
+}
+
+#menu {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(210, 0, 10);
+    border: solid darkred 2px;
+    position: fixed;
+    z-index: 1;
+    height: 50px;
+}
+
+form {
+    width: 25%;
+    position: relative;
+    right: 10%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#loupe {
+    height: 30px;
+    width: auto;
+    position: relative;
+    top: 10px;
+}
+
+input {
+    width: 80%;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+#menu li {
+    width: 100%;
+    height: 100%;
+    border-right: solid darkred 1px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#menu li:last-child {
+    border: none;
+}
+
+#menu a {
+    color: white;
+    text-transform: uppercase;
+
+}
+
+#menu li:hover {
+    background-color: darkred;
+    height: 110%;
+}
+
+#retour_accueil {
+    height: 25px;
+    width: auto;
+    position: relative;
+    right: 140%;
+}
+
+
+/* ACCUEIL */
+
+#pageAccueil .wrap {
+    margin-top: 30px;
+}
+
+#pageAccueil #bandeau {
+    width: 100%;
+}
+
+#pageAccueil #bandeau img {
+    width: 100%;
+    height: auto;
+}
+
+#pageAccueil #titre {
+    width: 400px;
+    margin: 5% 0;
+}
+
+#pageAccueil #page {
+    padding: 10% 0;
+
+}
+
+#pageAccueil #presentation {
+    text-align: justify;
+    padding: 40px 0;
+    background-color: #444;
+}
+
+#pageAccueil #presentation h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid #999;
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+#pageAccueil #presentation p {
+    color: white;
+    width: 40%;
+    margin: auto;
+    padding: 30px 0;
+
+}
+
+#pageAccueil #vignettes {
+    width: 98%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+#pageAccueil .lien_accueil {
+    width: 22%;
+    height: 150px;
+
+    margin-right: 0.2%;
+}
+
+#pageAccueil .lien_accueil a {
+    width: 100%;
+}
+
+#pageAccueil .lien_accueil a img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    border-radius: 3px;
+}
+
+#pageAccueil .lien_accueil a img:hover {
+    opacity: 1;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3f3f3f;
+    margin: 100px auto 0 auto;
+    border-radius: 3px 3px 0 0;
+    border: solid #1f1f1f 2px;
+    color: #fff;
+    height: 40px;
+    z-index: 1;
+
+}
+
+footer #credits a {
+    color: white;
+}
+
+footer #credits a:hover {
+    color: grey;
+}
+
+footer #medias {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+footer #liens {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer #liens a:hover {
+    opacity: 0.7;
+}
+
+footer #fleche_bouton {
+    height: 40px;
+    align-self: flex-end;
+}
+
+/* PAGES SECONDAIRES */
+
+/* JEU */
+
+#pageJeu #mosaique {
+    width: 55%;
+    height: 450px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#pageJeu #mosaique a {
+    width: 48%;
+    height: 48%;
+    opacity: 0.7;
+}
+
+#pageJeu #mosaique a:hover {
+    opacity: 1;
+}
+
+#pageJeu #mosaique div {
+    width: 100%;
+    height: 100%;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    border-radius: 3px;
+}
+
+#pageJeu .bloc1 {
+    background-image: url(Img/chateau.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pageJeu .bloc2 {
+    background-image: url(Img/plan14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pageJeu .bloc3 {
+    background-image: url(Img/bloc.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pageJeu .bloc4 {
+    background-image: url(Img/bloc4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pageJeu aside {
+    background-color: white;
+    width: 45%;
+    height: 350px;
+    margin: 40px 0;
+    display: flex;
+    padding-left: 15px;
+    border-radius: 3px 0 0 3px;
+}
+
+#pageJeu aside a:hover {
+    opacity: 0.8;
+}
+
+#pageJeu aside li {
+    list-style-type: circle;
+    font-size: 9px;
+    line-height: 5px;
+}
+
+#pageJeu #liens_annexes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    width: 50%;
+}
+
+#pageJeu #haut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #eee;
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+#pageJeu #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px auto 50px auto;
+}
+
+#pageJeu #text article {
+    width: 80%;
+    text-align: justify;
+    margin: 20px auto;
+}
+
+#pageJeu #text h2 {
+    border-bottom: solid 2px grey;
+    padding-bottom: 5px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#pageJeu #monde {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+#pageJeu #system #titre {
+    display: flex;
+}
+
+#pageJeu #system img {
+    width: 90px;
+}
+
+#pageJeu #system a:hover {
+    opacity: 0.5;
+}
+
+#pageJeu #dev {
+    display: flex;
+    align-items: center;
+}
+
+#pageJeu #dev aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    left: 50px;
+    width: 70%;
+
+}
+
+#pageJeu #dev #concepteur {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#pageJeu #dev #concepteur h4 {
+    color: gray;
+    font-size: 20px;
+}
+
+#pageJeu #dev ul {
+    background-color: #f4f4f4;
+    color: #999;
+    width: 100%;
+    height: 100%;
+    padding: 5px 15px 15px 15px;
+    font-size: 20px;
+    box-sizing: border-box
+}
+
+#pageJeu #dev ul a {
+    color: #888;
+    text-align: center;
+}
+
+#pageJeu #dev ul li {
+    font-size: 15px;
+    list-style: disc;
+}
+
+#pageJeu #dev a:hover {
+    opacity: 0.8;
+}
+
+#pageJeu #cameraman {
+    width: 300px;
+    height: auto;
+}
+
+#pageJeu aside #legende {}
+
+#pageJeu #plus h2 {
+    color: #888;
+    width: 70%;
+    text-align: left;
+    border-bottom: solid 2px #999;
+}
+
+#pageJeu #plus {
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #999;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+
+#pageJeu #vignettes {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#pageJeu #vignettes img {
+    border-radius: 3px;
+    width: 100%;
+    height: 250px;
+}
+
+#pageJeu #vignettes a {
+    width: 28%;
+    height: 250px;
+    margin: 3px;
+}
+
+#pageJeu #vignettes a:hover {
+    opacity: 0.9;
+}
+
+#pageJeu #secret {
+    font-size: 12px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+#pageJeu #secret p {
+    margin-left: 10px;
+}
+
+/* saga */
+
+#pageSaga #nouveautes,
+#pageSaga #evolution {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#pageSaga h2 {
+    border-bottom: solid 2px grey;
+    padding-bottom: 5px;
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#pageSaga #principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#pageSaga #societe {
+    width: 60%;
+    height: 350px;
+    margin-left: 10%;
+    background-color: darkslategray;
+    opacity: 0.8;
+    padding: 15px;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 1.5;
+    position: relative;
+    top: 60px;
+    box-shadow: 10px 5px 5px black;
+}
+
+#pageSaga #shigeru {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#pageSaga #shigeru div {
+    width: 50%;
+}
+
+#pageSaga video {
+    margin: auto;
+}
+
+#pageSaga #evolution {
+    height: 400px;
+    text-align: justify;
+}
+
+#pageSaga #evolution div {
+    width: 40%;
+    margin: auto;
+}
+
+#pageSaga #evolution p {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#pageSaga #societe h3 {
+    color: white;
+}
+
+#pageSaga #fond {
+    width: 30%;
+    height: 500px;
+    background-image: url(Img/mario4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#pageSaga #origines {
+    background-image: url(Img/plan2.jpeg);
+    background-repeat: repeat-x;
+    background-position: 2em 5em;
+
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+}
+
+#pageSaga #origines p {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 45px;
+    height: 270px;
+    box-sizing: border-box;
+}
+
+#pageSaga #images_lien img {
+    width: 98%;
+    height: 200px;
+}
+
+#pageSaga #images_lien {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#pageSaga #images_lien a:hover {
+    opacity: 0.8;
+}
+
+#pageSaga #smart {
+    background-color: #f4f4f4;
+    color: #999;
+    margin-top: 30px;
+}
+
+#pageSaga #smart p {
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+}
+
+#pageSaga #nouveautes {
+    padding-top: 50px;
+}
+
+/* PLUS */
+
+#pagePlus #contenu {}
+
+#pagePlus #auteurs {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+#pagePlus #portrait {
+    width: 300px;
+}
+
+#pagePlus #auteurs article {
+    width: 60%;
+    margin: auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #999;
+}
+
+#pagePlus #projet {
+    width: 100%;
+    margin: 0;
+    padding: 5% 5%;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    color: #999;
+}
+
+#pagePlus #projet div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#pagePlus #projet article {
+    width: 40%;
+    text-align: center;
+}
+
+#pagePlus #projet ul {
+    text-align: left;
+
+}
+
+#pagePlus #projet li {
+    list-style-type: circle;
+}
+
+#pagePlus #projet h2 {
+    text-align: center;
+    border-bottom: solid #ddd;
+    padding-bottom: 10px;
+}
+
+#pagePlus #infos {
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#pagePlus #sommaire_infos {
+    text-align: center;
+    margin: 20px auto;
+    background-color: #222;
+    color: #fff;
+    width: 80%;
+    padding: 5px 0 0 0;
+    border-radius: 5px;
+}
+
+#pagePlus #sommaire_infos h2 {
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+#pagePlus #sommaire_infos p {
+    color: #ddd;
+}
+
+#pagePlus #sommaire_infos ul {
+    background-color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#pagePlus #sommaire_infos a {
+    color: #999;
+}
+
+#pagePlus #sommaire_infos a:hover {
+    color: white;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+}
+
+#pagePlus #details_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+#pagePlus #details_infos article {
+    width: 60%;
+    text-align: justify;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    color: #777;
+    margin-top: 20px;
+    border-radius: 0 5px 5px 0;
+
+}
+
+#pagePlus .deco1 {
+    width: 280px;
+    height: auto;
+    position: relative;
+    right: 50px;
+}
+
+#pagePlus #details_infos .sous_bloc {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pagePlus #details_infos .sous_bloc:nth-child(4) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pagePlus #clin_oeil {
+    width: 90%;
+    position: relative;
+    top: 120px;
+}
+
+/* CONSOLE */
+
+#pageConsole #bandeau {
+    width: 100%;
+    height: 500px;
+    background-image: url(Img/console9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+#pageConsole #mini_bandeau {
+    display: flex;
+}
+
+#pageConsole #principal {
+    margin-top: 20px;
+}
+
+#pageConsole #disclaimer {
+    background-color: #f2f2f2;
+    width: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    text-align: justify;
+    color: #999;
+    box-sizing: border-box;
+}
+
+#pageConsole article {
+    width: 80%;
+    margin: 30px auto 50px auto;
+    text-align: justify;
+}
+
+#pageConsole #mini_bandeau {
+    background-color: #ddd;
+}
+
+#pageConsole #principal h2 {
+    width: 50%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid grey;
+}
+
+#pageConsole #innovation {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+}
+
+#pageConsole #innovation div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+#pageConsole #innovation img {
+    width: 400px;
+    height: 350px;
+    position: relative;
+    top: 60px;
+}
+
+#pageConsole #extension {
+    width: 100%;
+}
+
+#pageConsole #extension #bandeau_64DD {
+    background-image: url(Img/fond3.png);
+    width: 100%;
+    padding: 25px 40%;
+    box-sizing: border-box;
+}
+
+#pageConsole #extension p {
+    width: 70%;
+    margin: auto;
+}
+
+#pageConsole #extension h3 {
+    text-align: center;
+}
+
+#pageConsole #extension #bandeau_64DD img {
+    width: 170px;
+    height: auto;
+}
+
+#pageConsole #general {
+    display: flex;
+    width: 90%;
+}
+
+#pageConsole #mario {
+    background-color: #f4f4f4;
+    color: #999;
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+#pageConsole #bas {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#pageConsole #bas #console {
+    width: 80%;
+}
+
+#pageConsole #secondaire {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pageConsole #shop {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 0 30px;
+    text-align: center;
+}
+
+#pageConsole #shop span {
+    margin-bottom: 15px;
+}
+
+#pageConsole #shop a img {
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+#pageConsole #shop a:hover {
+    opacity: 0.8;
+}
+
+/* INSTALLATION */
+
+#pageInst h1 
+{
+    color: #222;
+    text-shadow: 0px 2px 3px #555;
+    font-size: 65px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+#pageInst #information 
+{
+    
+    font-size: 25px;
+    font-family: Tahoma;
+}
+#pageInst #download {
+    width: 200px;
+    height: auto;
+}
+#pageInst #photo-list {
+    position: relative;
+    float: bottom;
+    top: 0px;
+    width: 1250px;
+    height: 180px;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 1px dashed #ccc;
+}
+
+#pageInst #photo-list ul {
+    list-style: none;
+}
+
+#pageInst  #photo-list li {
+    float: left;
+    padding-right: 9px;
+}
+
+#pageInst  #photo-list img {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 4px;
+}
+
+#pageInst #photo-list img:hover {
+    transform: scale(1.4);
+}
+#pageInst #information .nintendoliens {
+    text-decoration: none;
+}
+
+#pageInst #information .nintendoliens:hover {
+    text-decoration: underline;
+}
+#pageInst #haut
+{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}

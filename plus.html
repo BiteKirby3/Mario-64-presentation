@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Super Mario 64</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
+    </head>
+    <body id="pagePlus">
+
+        <header>
+            <nav id="menu">
+                <a href="0.html"><img id="retour_accueil" src="Img/logoW.png" alt="bouton_acceuil"></a>
+                <form action="www.baidu.com/index.php" method="get">
+                    <input type="search" required placeholder="rechercheNintendo"/>
+                    <input id="loupe" type="image" src="Img/loupe.png" alt="loupe"/>
+                    
+                </form>
+                <ul>
+                    <li> <a href="./jeu.html">Le Jeu</a></li>
+                    <li><a href="./saga.html">La saga</a></li>
+                    <li><a href="./installation.html">Installation</a></li>
+                    <li><a href="./console.html">Console</a></li>
+                    <li><a href="./plus.html">À propos</a></li>  
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <div class="wrap">
+            <div id="contenu"> 
+                <h1>À propos</h1>
+                <section id="auteurs">
+                    
+                    <img id="portrait" src="Img/1.jpeg" alt="Toads"/>
+                    <article>
+                        <h3>Auteurs</h3>
+                        <p>Étudiantes en première année de DUT d'informatique, nous avons réalisé ce site web autour du jeu vidéo Super Mario 64 de la célèbre saga de Nintendo.</p>
+                        <span>Sihan XIE & Jinane BEN SALEM</span>
+                    </article>
+                    
+                </section>
+                <div class="clear"></div>
+                
+                <section id="projet">
+                    <h2>Projet</h2>
+                    <div>
+                        <article id="article_gauche">
+                            <p>La société Nintendo occupe une place centrale dans l'histoire du Jeu Vidéo et a donné naissance à des personnages iconiques. Le jeu vidéo que l'on connait à en partie été influencé par Super Mario 64 qui marqua un tournant dans la manière de concevoir les jeux. Ainsi, ce projet a pour objectif de rendre compte de certaines caractéristiques du produit sous la forme d'un ensemble de pages web.</p>
+                        </article>
+                        <article id="article_droite">
+                            Les pages de ce projet couvrent plusieurs rubriques : 
+                            <ul>
+                                <li><strong>le Jeu </strong>: sa trame, sa réalisation, ses innovations</li>
+                                <li><strong>la Saga</strong> : l'évolution des jeux, les nouveautés</li>
+                                <li><strong>la Console Nintendo 64</strong> </li>
+                                <li><strong>l'Installation</strong></li>
+                                <li><strong>les Informations complémentaires</strong> : au sujet des auteurs, des caractéristiques du projet, des éléments techniques</li>
+                            
+                            </ul>
+                        </article>
+                    </div>
+                    
+                </section>
+                
+                <div class="clear"></div>
+                
+                <section id="infos">
+                    <div id="sommaire_infos">
+                    
+                        <h2>Informations techniques</h2>
+                        <p>La réalisation du site s'axe autour des éléments caractéristiques suivants :</p>
+                        <ul>
+                            <li>
+                                <a href="#barre_info"> La barre de navigation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#pied_info">
+                                Le pied de page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#imbrication_info">
+                                L'imbrication 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#clic_info">
+                                Des images cliquables
+                                </a>
+                            </li>
+                            <li>
+                                ...
+                            </li>
+                        </ul>
+                
+                    </div>
+                    
+                    <div id="details_infos">
+                        <div class="sous_bloc">
+                            <article id="barre_info">
+                            
+                                <h2>Le menu de navigation</h2>
+                                <p>
+                                Le menu de navigation est l'élément présent à tout moment, sur n'importe quelle page du site; en position fixe, il reste visible en haut de la page, permettant de naviguer entre les différentes sections.
+                                <br>
+                                En plus des onglets réalisés grace à une liste à puces en ligne, il contient une partie formulaire comportant un espace de saisie pour effectuer une recherche directement sur le site de Nintendo (factice). Au survol des boutons onglets, ceux-ci changent d'aspect grace à l'utilisation de pseudo classes hover.
+                                </p>
+                                
+                            </article >
+                            <img class="deco1" src="Img/mario8.jpeg" alt="mario">
+                        </div>
+                        
+                        <div class="sous_bloc">
+                            <img src="Img/plan3.jpeg" alt="illustration">
+                            <article id="pied_info">
+                                <h2>le pied de page</h2>
+                                <p>Le pied de la page apparait tout en bas : il comporte des liens cliquables vers les réseaux sociaux de Nintendo, et le nom des créateurs. Une fleche cliquable permet également de remonter en haut de la page.
+                                </p>
+                            </article >
+                        </div>
+                        
+                        <div class="sous_bloc">
+                            <article  id="imbrication_info">
+                                <h2>Imbrication & Flex box</h2>
+                                <p>L'architecture du site fait régulièrement appel à Flexbox. L'imbrication permet d'obtenir des sections bien distinctes, d'en gérer les marges et l'alignement facilement. Des propriétés comme justify-content ou align-self sont donc récurrentes.
+                                <br>D'autre part, une balise globale classée sous le nom "wrap" englobe toutes les pages et leur attribut des marges automatiques ; ce simple bloc permet d'obtenir un contenu centré, meme lorsque la fenetre est réduite.
+                                </p>
+                            </article >
+                        </div>
+                        
+                        <div class="sous_bloc">
+                            <article  id="clic_info">
+                                <h2>Images cliquables</h2>
+                                <p>Le visuel du jeu vidéo est présent grace à diverses images et captures du jeu ou de l'univers de la saga. Pour permettre à l'utilisateur de facilement retrouver les produits présentés, ou d'accéder à divers pages extérieures au site, des liens sous formes d'images ont été introduits. Grace à l'option "title" appliquée aux liens, en survolant ceux-ci, l'utilisateur pourra voir s'afficher, dans une bulle, une indication sur leur destination. "target" est également utilisé avec "_blank" pour ouvrir certains liens dans un nouvel onglet</p>
+                            
+                            </article >
+                        </div>
+                        
+                    </div>
+                </section>
+                <section>
+                    <img id="clin_oeil" src="Img/mario13.png" alt="mario">
+                </section>
+            
+            </div>
+        </div>
+        
+        <footer>
+            
+            <div id="credits">
+                <span>BY </span>
+                <a href="plus.html">Sihan & Jinane</a>
+            </div>
+            
+            <div id="medias">
+                <span>Retrouvez Nintendo sur </span>
+                <div id="liens">
+                    <a target="_blank" href="https://www.facebook.com/Nintendo/">
+                        <img id="fb" src="Img/facebook.png" alt="facebook"/>
+                    </a>
+                    
+                    <a target="_blank" href="https://twitter.com/NintendoFrance">
+                        <img id="twitt" src="Img/twitter.png" alt="twitter"/>
+                    </a>
+                    
+                    <a target="_blank" href="https://www.youtube.com/user/NintendoFR">
+                        <img id="yt" src="Img/youtube.png" alt="youtube"/>
+                    </a>
+            
+                </div>
+            </div>
+            
+            <a href="#contenu">
+               <img id="fleche_bouton" src="Img/fleche.png" alt="remonter_en_haut"/>
+            </a>
+        </footer>
+    
+    </body>
+</html>

@@ -1,0 +1,66 @@
+
+
+#download {
+    float: right;
+}
+
+#photo-list {
+	position:relative;
+	float:bottom;
+	top:0px;
+    width:1250px;  
+    height:180px;  
+    margin:50px auto;
+    overflow:hidden;     
+    border:1px dashed #ccc;  
+}  
+
+#photo-list ul {
+	list-style:none;
+}  
+
+#photo-list li {
+	float:left; padding-right:9px;
+}  
+
+#photo-list img {
+   border:1px solid #ddd; background:#fff; padding:4px;
+}
+
+#photo-list img:hover {
+  transform: scale(1.4);
+}  
+
+#download{
+	position:relative;
+	bottom:50px;
+	right:210px;
+	width:200px;
+	height:auto;
+}
+h1{
+	color: #222; 
+	text-shadow: 0px 2px 3px #555;
+	font-size:65px;
+	font-family:Verdana ;
+	text-align:center;
+	position:relative;
+	top:20px;
+}
+
+#information {
+	position:relative;
+	top:45px;
+	left:180px;
+	font-size:25px;
+	font-family:Tahoma ;
+}
+
+#information .nintendoliens{
+	text-decoration:none;
+}
+
+#information .nintendoliens:hover{
+ text-decoration:underline; 
+}
+
